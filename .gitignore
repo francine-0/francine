@@ -1,41 +1,37 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int soma(int a, int b);
 
-# Precompiled Headers
-*.gch
-*.pch
+int subtracao(int a, int b);
 
-# Linker files
-*.ilk
+int multiplicacao(int a, int b);
 
-# Debugger Files
-*.pdb
+float divisao(int a, int b);
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+int main () {
+std::cout << "O valor da soma é:" << soma(10, 2) << std::endl;
 
-# Fortran module files
-*.mod
-*.smod
+std::cout << "O valor da subtracao é:" << subtracao(10, 2) << std::endl;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+std::cout << "O valor da multiplicacao é:" << multiplicacao(10, 2) << std::endl;
 
-# Executables
-*.exe
-*.out
-*.app
+std::cout << "O valor da divisao é:" << divisao(10, 2) << std::endl;
 
-# debug information files
-*.dwo
+return 0;
+}
+
+int soma(int a, int b) {
+return a+b;
+}
+
+int subtracao(int a, int b) {
+return a - b;
+}
+
+int multiplicacao(int a, int b) {
+return a * b;
+}
+
+float divisao(int a, int b) {
+return a / b;
+}
